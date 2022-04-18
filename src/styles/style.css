@@ -1,4 +1,56 @@
 /** CSS STYLE **/
+:root {
+  --color-white: #fff;
+  --color-white-semitransparent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-standart: #fe8a02;
+  --color-standart-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-semitransparent: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+}
+
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url("../assets/fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("../assets/fonts/OpenSans/OpenSans-Bold.ttf")
+}
+
+@font-face {
+  font-family: "Neucha Regular";
+  src: url("../assets/fonts/Neucha/Neucha-Regular.ttf")
+}
+
+body {
+  font-family: "OpenSans Regular", sans-serif;
+}
+
+h1, h2, h3 {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  align-items: center;
+  padding: 100px 0px;
+}
 
 .hello {
   display: block;
