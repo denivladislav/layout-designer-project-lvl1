@@ -167,6 +167,7 @@ article .button {
 
 .after-header {
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 iframe {
@@ -306,4 +307,8 @@ iframe {
 
 .background-color-white {
   background-color: var(--color-white);
+}
+
+.keep-article {
+  display: inline-block;
 }
