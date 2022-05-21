@@ -146,6 +146,10 @@ header {
   background-color: var(--color-brown);
 }
 
+.bg-light {
+  background-color: #f5f4f0;
+}
+
 .header {
   position: relative;
   margin: 0;
@@ -231,7 +235,7 @@ iframe {
 }
 
 .card-container div:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   width: 350px;
 }
@@ -279,7 +283,6 @@ iframe {
   margin-bottom: 100px;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-  background-color: var(--color-white);
 
   vertical-align: middle;
 }
@@ -294,6 +297,7 @@ iframe {
 .info-container .after-header {
   font-size: 34px;
   font-weight: normal;
+  line-height: normal;
 }
 
 .info-container h4 {
