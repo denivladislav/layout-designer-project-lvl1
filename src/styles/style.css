@@ -1,15 +1,15 @@
 /** CSS STYLE **/
 :root {
-  --color-white: #fff;
-  --color-white-semitransparent: #d7ccc0;
-  --color-light: #f5f4f0;
-  --color-standart: #fe8a02;
-  --color-standart-dark: #42413c;
-  --color-dark: #2a2626;
-  --color-dark-semitransparent: #908d8b;
-  --color-brown: #b09a81;
-  --color-blue: #1085c5;
-  --color-dark2: #212529;
+  --white: #fff;
+  --white-semitransparent: #d7ccc0;
+  --white-light: #f5f4f0;
+  --orange: #fe8a02;
+  --orange-dark: #42413c;
+  --dark: #2a2626;
+  --dark-semitransparent: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --dark2: #212529;
 }
 
 @font-face {
@@ -29,6 +29,7 @@
 
 body {
   margin: 0;
+
   font-family: "OpenSans Regular", sans-serif;
 }
 
@@ -50,76 +51,53 @@ h3 {
   font-size: 34px;
 }
 
-section {
-  position: relative;
-
-  display: flex;
-
-  padding: 100px 0;
-  flex-direction: column;
-  align-items: center;
-
-  overflow: hidden;
-}
-
-header {
-  position: relative;
-  padding: 100px 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  overflow: hidden;
-
-  background-color: var(--color-light);
-}
-
+section,
+header,
 footer {
   position: relative;
 
   display: flex;
-
-  padding: 100px 0;
   flex-direction: column;
   align-items: center;
+
+  padding: 100px 0;
 
   overflow: hidden;
 }
 
 .text-orange {
-  color: var(--color-standart);
+  color: var(--orange);
 }
 
 .text-white {
-  color: var(--color-white);
+  color: var(--white);
 }
 
 .text-dark {
-  color: var(--color-dark);
+  color: var(--dark);
 }
 
 .text-dark-semitransparent {
-  color: var(--color-dark-semitransparent);
+  color: var(--dark-semitransparent);
 }
 
 .text-white-semitransparent {
-  color: var(--color-white-semitransparent);
+  color: var(--white-semitransparent);
 }
 
 .text-brown {
-  color: var(--color-brown);
+  color: var(--brown);
 }
 
 .text-dark2 {
-  color: var(--color-standart-dark);
+  color: var(--orange-dark);
 }
 
 .text-number {
   margin-bottom: 40px;
 
-  font-family: "Neucha Regular", sans-serif;
   font-size: 64px;
+  font-family: "Neucha Regular", sans-serif;
   line-height: 1;
 }
 
@@ -130,6 +108,7 @@ footer {
 
 .columns-2 {
   padding-top: 16px;
+
   column-count: 2;
   column-gap: 30px;
 }
@@ -145,31 +124,36 @@ footer {
   width: 100%;
   height: 100%;
 
-  opacity: 0.1;
-
   background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  opacity: 0.1;
 
   content: "";
 }
 
 .bg-brown {
-  background-color: var(--color-brown);
+  background-color: var(--brown);
 }
 
 .bg-light {
-  background-color: var(--color-light);
+  background-color: var(--white-light);
+}
+
+.bg-dark {
+  background-color: var(--orange-dark);
 }
 
 .header {
   position: relative;
-  margin: 0;
-
-  font-family: "Neucha Regular", sans-serif;
-  font-weight: normal;
 
   z-index: 1;
+
+  margin: 0;
+
+  font-weight: normal;
+  font-family: "Neucha Regular", sans-serif;
 }
 
 .header-margin-bottom {
@@ -182,33 +166,39 @@ footer {
 
 .button {
   padding: 12px 24px;
+
   color: white;
-  border: none;
-  background-color: var(--color-standart);
 
   font-family: "OpenSans Bold", sans-serif;
+
+  background-color: var(--orange);
+
+  border: none;
 }
 
 article .button {
   position: absolute;
+
   margin-top: 40px;
 }
 
 .header-image {
   position: absolute;
 
-  height: 525px;
   top: 55px;
   right: -110px;
 
   z-index: 0;
+
+  height: 525px;
 }
 
 .after-header {
-  margin-bottom: 30px;
   margin-top: 30px;
-  font-size: 16px;
+  margin-bottom: 30px;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 26px;
   letter-spacing: 0;
 }
@@ -217,19 +207,15 @@ iframe {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.bg-dark {
-  background-color: var(--color-standart-dark);
-}
-
 .no-bottom-padding {
   padding-bottom: 0;
 }
 
 .video {
-  margin-bottom: -90px;
-
   position: relative;
   z-index: 1;
+
+  margin-bottom: -90px;
 }
 
 .video-container {
@@ -247,18 +233,17 @@ iframe {
 }
 
 .card-container div:first-child {
-  margin-bottom: 30px;
-
   width: 350px;
+
+  margin-bottom: 30px;
 }
 
 .card {
+  width: 302px;
   margin-bottom: 20px;
   padding: 24px;
 
-  width: 302px;
-
-  background-color: var(--color-light);
+  background-color: var(--white-light);
 }
 
 .card-header {
@@ -283,20 +268,21 @@ iframe {
 .info-container {
   margin-bottom: 0;
 
+  font-size: 24px;
+  font-family: "Neucha Regular", sans-serif;
+
   column-count: 2;
   column-gap: 30px;
-
-  font-family: "Neucha Regular", sans-serif;
-  font-size: 24px;
 }
 
 .info-container img {
   position: relative;
+
   margin-bottom: 100px;
 
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-
   vertical-align: middle;
+
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .info-container h2 {
@@ -307,8 +293,8 @@ iframe {
 }
 
 .info-container .after-header {
-  font-size: 34px;
   font-weight: normal;
+  font-size: 34px;
   line-height: normal;
 }
 
@@ -317,19 +303,19 @@ iframe {
   margin-bottom: 20px;
   padding: 5px 0 5px 10px;
 
-  column-span: all;
-
-  font-family: "OpenSans Bold", sans-serif;
   font-size: 14px;
+  font-family: "OpenSans Bold", sans-serif;
+
+  column-span: all;
 }
 
 .info-container article {
   position: relative;
 
-  font-family: "OpenSans Regular", sans-serif;
-  font-size: 16px;
+  color: var(--dark);
 
-  color: var(--color-dark);
+  font-size: 16px;
+  font-family: "OpenSans Regular", sans-serif;
 }
 
 .image-text-wrapper {
@@ -344,12 +330,12 @@ iframe {
   margin-left: -40px;
 }
 
-.background-color-brown {
-  background-color: var(--color-brown);
+.background-brown {
+  background-color: var(--brown);
 }
 
-.background-color-white {
-  background-color: var(--color-white);
+.background-white {
+  background-color: var(--white);
 }
 
 .keep-article {
@@ -365,39 +351,39 @@ iframe {
 }
 
 .email-block {
-  padding-right: 100px;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-grow: 1;
+  justify-content: center;
+
+  padding-right: 100px;
 }
 
 .email-block input {
-  padding: 0 15px;
-
-  height: 50px;
   width: 100%;
+  height: 50px;
+
+  padding: 0 15px;
 
   border: none;
 }
 
 .email-block input::placeholder {
-  font-family: "OpenSans Regular", sans-serif;
   font-size: 13.1px;
+  font-family: "OpenSans Regular", sans-serif;
 }
 
 .email-block button {
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  margin-left: -65px;
+  justify-content: center;
 
   width: 70px;
   height: 50px;
 
-  background-color: var(--color-standart);
+  margin-left: -65px;
+
+  background-color: var(--orange);
 
   border: none;
 }
