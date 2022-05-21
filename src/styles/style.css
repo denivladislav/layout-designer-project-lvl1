@@ -75,6 +75,18 @@ header {
   background-color: #f5f4f0;
 }
 
+footer {
+  position: relative;
+
+  display: flex;
+
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+}
+
 .text-orange {
   color: var(--color-standart);
 }
