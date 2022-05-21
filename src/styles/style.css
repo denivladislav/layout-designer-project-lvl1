@@ -4,12 +4,12 @@
   --white-semitransparent: #d7ccc0;
   --white-light: #f5f4f0;
   --orange: #fe8a02;
-  --orange-dark: #42413c;
+  --orange-dark: #ea7600;
+  --asphalt: #42413c;
   --dark: #2a2626;
   --dark-semitransparent: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
-  --dark2: #212529;
 }
 
 @font-face {
@@ -29,6 +29,8 @@
 
 body {
   margin: 0;
+
+  color: var(--dark);
 
   font-family: "OpenSans Regular", sans-serif;
 }
@@ -65,16 +67,16 @@ footer {
   overflow: hidden;
 }
 
+iframe {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
 .text-orange {
   color: var(--orange);
 }
 
 .text-white {
   color: var(--white);
-}
-
-.text-dark {
-  color: var(--dark);
 }
 
 .text-dark-semitransparent {
@@ -89,10 +91,6 @@ footer {
   color: var(--brown);
 }
 
-.text-dark2 {
-  color: var(--orange-dark);
-}
-
 .text-number {
   margin-bottom: 40px;
 
@@ -101,13 +99,21 @@ footer {
   line-height: 1;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .container {
+  position: relative;
+
+  z-index: 1;
+
   width: 1100px;
   margin-bottom: 100px;
 }
 
 .columns-2 {
-  padding-top: 16px;
+  padding-top: 20px;
 
   column-count: 2;
   column-gap: 30px;
@@ -120,6 +126,8 @@ footer {
 .bg-image::before {
   position: absolute;
   top: 0;
+
+  z-index: 0;
 
   width: 100%;
   height: 100%;
@@ -137,12 +145,16 @@ footer {
   background-color: var(--brown);
 }
 
-.bg-light {
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-white-light {
   background-color: var(--white-light);
 }
 
-.bg-dark {
-  background-color: var(--orange-dark);
+.bg-asphalt {
+  background-color: var(--asphalt);
 }
 
 .header {
@@ -160,11 +172,7 @@ footer {
   margin: 0 0 185px;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.button {
+.btn {
   padding: 12px 24px;
 
   color: white;
@@ -176,7 +184,7 @@ footer {
   border: none;
 }
 
-article .button {
+.btn-about {
   position: absolute;
 
   margin-top: 40px;
@@ -201,10 +209,6 @@ article .button {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0;
-}
-
-iframe {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .no-bottom-padding {
