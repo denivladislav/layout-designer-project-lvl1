@@ -2,7 +2,7 @@
 :root {
   --color-white: #fff;
   --color-white-semitransparent: #d7ccc0;
-  --color-light: hsl(48, 20%, 95%);
+  --color-light: #f5f4f0;
   --color-standart: #fe8a02;
   --color-standart-dark: #42413c;
   --color-dark: #2a2626;
@@ -72,7 +72,7 @@ header {
 
   overflow: hidden;
 
-  background-color: #f5f4f0;
+  background-color: var(--color-light);
 }
 
 footer {
@@ -159,7 +159,7 @@ footer {
 }
 
 .bg-light {
-  background-color: #f5f4f0;
+  background-color: var(--color-light);
 }
 
 .header {
@@ -173,7 +173,7 @@ footer {
 }
 
 .header-margin-bottom {
-  margin: 0 0 185px 0;
+  margin: 0 0 185px;
 }
 
 .text-center {
@@ -210,11 +210,11 @@ article .button {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 iframe {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .bg-dark {
@@ -294,7 +294,7 @@ iframe {
   position: relative;
   margin-bottom: 100px;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 
   vertical-align: middle;
 }
