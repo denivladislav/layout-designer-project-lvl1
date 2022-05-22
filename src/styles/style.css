@@ -91,16 +91,12 @@ iframe {
   text-align: center;
 }
 
-.margin-top-16 {
-  margin-top: 16px;
-}
-
 .margin-top-12 {
   margin-top: 12px;
 }
 
-.margin-bottom-9 {
-  margin-bottom: 9px;
+.margin-top-16 {
+  margin-top: 16px;
 }
 
 .margin-left-35 {
@@ -362,6 +358,10 @@ iframe {
   display: inline-block;
 }
 
+footer > .container {
+  margin-bottom: 76px;
+}
+
 .footer-block {
   display: flex;
 }
@@ -377,6 +377,10 @@ iframe {
   justify-content: center;
 
   padding-right: 100px;
+}
+
+.email-block form {
+  display: flex;
 }
 
 .email-block input {
@@ -408,10 +412,6 @@ iframe {
   border: none;
 }
 
-.email-block form {
-  display: flex;
-}
-
 .email-block button::before {
   position: absolute;
 
@@ -425,6 +425,18 @@ iframe {
   content: "";
 }
 
+.form-name {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.form-subtext {
+  margin-top: 5px;
+
+  font-size: 12px;
+}
+
 .card:hover {
   color: var(--white);
 
@@ -433,4 +445,10 @@ iframe {
 
 .card:hover h3 {
   color: var(--white);
+}
+
+.email-block form button:hover {
+  background-color: var(--orange-dark);
+
+  cursor: pointer;
 }
