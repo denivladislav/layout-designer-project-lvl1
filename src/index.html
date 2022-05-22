@@ -11,7 +11,7 @@
 <body>
     <header class="bg-image bg-white-light">
         <div class="container">
-            <h1 class="header header-margin-bottom">
+            <h1>
                 <span class="text-orange">Когнитивные</span><br /><span class="text-orange">искажения</span><br /><span>в программировании</span>
             </h1>
             <article class="columns-2">
@@ -20,20 +20,19 @@
                 <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
                 <br />
                 <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-                <!-- <form action="#navigation">
-                    <input type="submit" value="Go to Google" />
-                </form> -->
-                <button class="btn btn-about" href="#navigation">ПОДРОБНЕЕ</button>
+                <form action="#navigation">
+                    <button type="submit" class="btn btn-about">ПОДРОБНЕЕ</button>
+                </form>
             </article>
         </div>
-        <img class="header-image" src="assets/images/imageHeader.png" alt="">
+        <img class="header-image" src="assets/images/imageHeader.png" alt="Маскот Hexlet работает за ноутбуком">
     </header>
     <main>
-        <section class="no-bottom-padding">
-            <h2 class="header text-center">
+        <section id="video">
+            <h2 class="text-center">
                 <span>Что же это такое,</span><br /><span class="text-orange">когнитивные искажения?</span>
             </h2>
-            <span class="after-header">Что такое когнитивные искажения. Petrovna Channel</span>
+            <span class="subheader">Что такое когнитивные искажения. Petrovna Channel</span>
         </section>
         <div class="video-container">
             <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
@@ -41,33 +40,33 @@
         <section class="bg-asphalt" id="navigation">
             <div class="container card-container">
                 <div>
-                    <h3 class="header card-header">
+                    <h3 class="card-header">
                         <span class="text-orange">5 когнитивных искажений</span><span class="text-white"> о существовании которых стоит помнить</span>
                     </h3>
                 </div>
                 <div class="card">
                     <div class="text-number">1</div>
-                    <h3 class="text-orange header">Эффект ИКЕА</h3>
+                    <h3 class="text-orange">Эффект ИКЕА</h3>
                     <div class="card-text margin-top-16">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</div>
                 </div>
                 <div class="card">
                     <div class="text-number">2</div>
-                    <h3 class="text-orange header">Преждевременная оптимизация</h3>
+                    <h3 class="text-orange">Преждевременная оптимизация</h3>
                     <div class="card-text margin-top-16">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</div>
                 </div>
                 <div class="card">
                     <div class="text-number">3</div>
-                    <h3 class="text-orange header">Искажение новизны</h3>
+                    <h3 class="text-orange">Искажение новизны</h3>
                     <div class="card-text margin-top-16">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</div>
                 </div>
                 <div class="card">
                     <div class="text-number">4</div>
-                    <h3 class="text-orange header">Гиперболическое обесценивание</h3>
+                    <h3 class="text-orange">Гиперболическое обесценивание</h3>
                     <div class="card-text margin-top-12">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</div>
                 </div>
                 <div class="card">
                     <div class="text-number">5</div>
-                    <h3 class="text-orange header">Ошибка планирования</h3>
+                    <h3 class="text-orange">Ошибка планирования</h3>
                     <div class="card-text margin-top-16">Неправильно рассчитывать время необходимое для завершения задачи.</div>
                 </div>
             </div>
@@ -78,7 +77,7 @@
                 <div class="image-text-wrapper margin-left-40">
                     <div class="text-dark-semitransparent">Когнитивные искажения</div>
                     <h2>Эффект ИКЕА</h2>
-                    <div class="after-header">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</div>
+                    <div class="subheader">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</div>
                 </div>
                 <h4 class="text-white bg-brown">КАК ПРОЯВЛЯЕТСЯ</h4>
                 <article>
@@ -92,7 +91,7 @@
                 <div class="image-text-wrapper">
                     <div class="text-white-semitransparent">Когнитивные искажения</div>
                     <h2 class="text-white">Преждевременная оптимизация</h2>
-                    <div class="text-white after-header">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</div>
+                    <div class="text-white subheader">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</div>
                 </div>
                 <img class="margin-left-neg40" src="assets/images/imagePremature.png" alt="">
                 <h4 class="text-brown bg-white">КАК ПРОЯВЛЯЕТСЯ</h4>
@@ -108,7 +107,7 @@
                 <div class="image-text-wrapper margin-left-40">
                     <div class="text-dark-semitransparent">Когнитивные искажения</div>
                     <h2>Искажение новизны</h2>
-                    <div class="after-header">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</div>
+                    <div class="subheader">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</div>
                 </div>
                 <h4 class="text-white bg-brown">КАК ПРОЯВЛЯЕТСЯ</h4>
                 <article>
@@ -122,7 +121,7 @@
                 <div class="image-text-wrapper">
                     <div class="text-white-semitransparent">Когнитивные искажения</div>
                     <h2 class="text-white">Гиперболическое обесценивание</h2>
-                    <div class="text-white after-header">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</div>
+                    <div class="text-white subheader">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</div>
                 </div>
                 <img class="margin-left-neg40" src="assets/images/imageDepreciation.png" alt="">
                 <h4 class="text-brown bg-white">КАК ПРОЯВЛЯЕТСЯ</h4>
@@ -138,7 +137,7 @@
                 <div class="image-text-wrapper margin-left-40">
                     <div class="text-dark-semitransparent">Когнитивные искажения</div>
                     <h2>Ошибка планирования</h2>
-                    <div class="after-header">Неправильно рассчитывать время необходимое для завершения задачи.</div>
+                    <div class="subheader">Неправильно рассчитывать время необходимое для завершения задачи.</div>
                 </div>
                 <h4 class="text-white bg-brown">КАК ПРОЯВЛЯЕТСЯ</h4>
                 <article>
@@ -150,7 +149,7 @@
         <footer>
             <div class="container">
                 <div class="bg-asphalt text-white footer-block">
-                    <h3 class="header">Хотите узнать больше?<br />Подпишитесь на обновления</h3>
+                    <h3>Хотите узнать больше?<br />Подпишитесь на обновления</h3>
                     <div class="email-block">
                         <span class="margin-bottom-9">Электронная почта</span>
                         <form>
