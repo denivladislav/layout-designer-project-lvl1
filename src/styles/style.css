@@ -224,6 +224,7 @@ iframe {
   color: white;
 
   font-family: "OpenSans Bold", sans-serif;
+  text-decoration: none;
 
   background-color: var(--orange);
 
@@ -240,6 +241,8 @@ iframe {
   position: absolute;
 
   margin-top: 40px;
+
+  text-transform: uppercase;
 }
 
 .header-image {
@@ -292,20 +295,10 @@ iframe {
   padding: 24px;
 
   background-color: var(--white-light);
+  text-decoration: none;
+  color: inherit;
 
   cursor: pointer;
-}
-
-.card a::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  z-index: 2;
-
-  content: "";
 }
 
 .card-header {
@@ -351,13 +344,14 @@ iframe {
   line-height: normal;
 }
 
-.info-container h4 {
+.info-container article h4 {
   margin-top: 0;
   margin-bottom: 20px;
   padding: 5px 0 5px 10px;
 
   font-size: 14px;
   font-family: "OpenSans Bold", sans-serif;
+  text-transform: uppercase;
 
   column-span: all;
 }
@@ -374,10 +368,6 @@ iframe {
 .image-text-wrapper {
   position: relative;
 }
-
-/* .keep-paragraph {
-  display: inline-block;
-} */
 
 footer > .container {
   margin-bottom: 76px;
@@ -402,6 +392,7 @@ footer > .container {
 
 .email-block form {
   display: flex;
+  flex-direction: column;
 }
 
 .email-block input {
@@ -418,7 +409,7 @@ footer > .container {
   font-family: "OpenSans Regular", sans-serif;
 }
 
-.email-block button {
+.email-block form button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,6 +435,14 @@ footer > .container {
   background-size: contain;
 
   content: "";
+}
+
+.email-block button span {
+  display: none;
+}
+
+.email-block .input-wrapper {
+  display: flex;
 }
 
 .form-name {
