@@ -5,7 +5,7 @@ width="800" length="1000">
 [![Actions Status](https://github.com/denivladislav/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/denivladislav/layout-designer-project-lvl1/actions)
 [![LayoutDesigner CI](https://github.com/denivladislav/layout-designer-project-lvl1/actions/workflows/htmlcss.yml/badge.svg)](https://github.com/denivladislav/layout-designer-project-lvl1/actions/workflows/htmlcss.yml)
 
-This simple layout was created in order to improve my layout design skills. 
+This layout was created in order to improve my layout design skills. 
 
 The layout has several sections and each of this sections contains information about a certain cognitive bias. 
 
